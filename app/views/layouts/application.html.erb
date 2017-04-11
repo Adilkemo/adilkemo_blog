@@ -7,8 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= render 'layouts/nav' %>
+  <%= bootstrap_flash %>
+<div class='container'>
 
-<%= yield %>
-
+  <%= yield %>
+</div>
+<%= render 'layouts/foot' %>
 </body>
 </html>
